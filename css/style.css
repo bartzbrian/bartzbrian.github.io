@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Share+Tech+Mono&display=swap");
+
+body *:hover {
+  cursor: url(../media/GEN/cursor.png), auto;
+}
+body:active *:hover {
+  cursor: url(../media/GEN/cursor.png), auto;
+}
+
+body {
+  font-family: "Cutive Mono", monospace;
+  font-size: 18px;
+  margin: 0px;
+  line-height: 125%;
+  background-color: #141411;
+}
+
+a {
+  text-decoration: none;
+  color: #6eb625;
+  /* cursor: url(../media/GEN/hover-cursor.png), auto; */
+}
+
+#email-me:hover {
+  color: #0d65d8;
+}
+
+h1,
+h2,
+h3,
+nav {
+  font-family: "Share Tech Mono", monospace;
+  line-height: 115%;
+}
+
+h1 {
+  font-size: 38px;
+  margin: 0px;
+}
+
+h2,
+nav > a {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-weight: 100;
+}
+
+header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: rgba(160, 160, 160, 0.4);
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  opacity: 90%;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 100000;
+}
+
+nav {
+  margin: 16px 0px 0px 64px;
+}
+
+nav a {
+  margin-right: 24px;
+  text-decoration: none;
+  color: #a8e26f;
+  transition: 0.4s;
+}
+
+nav a:hover {
+  color: #f2f2f2;
+}
+
+section {
+  display: grid;
+  width: 91%;
+  margin: 96px auto 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  align-items: baseline;
+  grid-auto-flow: dense;
+}
+
+#logotype {
+  margin: 8px 64px 0px 0px;
+  border: #6eb625 solid 2px;
+  border-radius: 15px;
+  padding: 0px 12px 0px 12px;
+  color: #a8e26f;
+  font-weight: 200;
+}
+
+#about-page {
+  background-image: url(../media/GEN/IR6.jpg);
+  background-size: cover;
+}
+
+#about-page #about {
+  border: #6eb625 solid 2px;
+  border-radius: 15px;
+  padding: 0px 8px 0px 8px;
+}
+
+#about-page .icon {
+  color: #6eb625;
+}
+
+#cv-page #cv {
+  border: #6eb625 solid 2px;
+  border-radius: 15px;
+  padding: 0px 8px 0px 8px;
+}
+
+#selected-page #selected {
+  border: #6eb625 solid 2px;
+  border-radius: 15px;
+  padding: 0px 8px 0px 8px;
+}
+
+#shop-page #shop {
+  border: #6eb625 solid 2px;
+  border-radius: 15px;
+  padding: 0px 8px 0px 8px;
+}
+
+footer {
+  position: fixed;
+  top: 95%;
+  left: 85%;
+  width: 20%;
+  font-style: italic;
+  opacity: 70%;
+  font-family: "Share Tech Mono", monospace;
+  color: #8d8b8b;
+  font-size: 16px;
+}
+
+.inline {
+  display: inline;
+}
+
+#bio {
+  align-items: end;
+}
+
+#bio img {
+  grid-column: 2 / span 5;
+}
+
+#bio-text {
+  grid-column: 7 / span 6;
+  color: #f2f2f2;
+  padding: 15px 20px 15px 20px;
+  margin-bottom: 64px;
+  background: rgba(139, 139, 139, 0.4);
+  border-radius: 15px;
+}
+
+#contact {
+  grid-column: 2 / span 3;
+  background: rgba(139, 139, 139, 0.4);
+  opacity: 80%;
+  display: flex;
+  gap: 48px;
+  padding: 12px 48px 6px 48px;
+  margin-bottom: 128px;
+  border-radius: 50px;
+}
+
+#contact a {
+  width: 100%;
+}
+
+#contact img {
+  transition: 0.6s;
+}
+
+#contact img:hover {
+  transform: scale(1.1);
+}
+
+#cv-page a {
+  color: #d2d2d2;
+  transition: 0.4s;
+}
+
+#cv-page a:hover {
+  color: #a8e26f;
+}
+
+#cv-heading > * {
+  margin: 0px;
+}
+
+#cv-text {
+  width: 91%;
+  margin: 96px auto 64px auto;
+  color: #d2d2d2;
+}
+
+#cv-year {
+  margin-right: 16px;
+}
+
+#selected-page,
+#shop-page {
+  background-color: #f2f2f2;
+}
+
+#selected-page nav a,
+#shop-page nav a {
+  color: #0d65d8;
+}
+
+#selected-page #selected,
+#shop-page #shop {
+  border: #6ea9f6 solid 2px;
+}
+
+#selected-page nav a:hover,
+#shop-page nav a:hover {
+  color: #6ea9f6;
+}
+
+#selected-page #logotype,
+#shop-page #logotype {
+  color: #0d65d8;
+  border: #6ea9f6 solid 2px;
+}
+
+#selected-page p {
+  color: #8d8b8b;
+  line-height: 120%;
+  font-size: 18px;
+}
+
+#selected-page #image-subgrid {
+  grid-column: 4 / span 9;
+}
+
+#selected-page section {
+  width: 96%;
+}
+
+#image-subgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 8px;
+  grid-auto-flow: dense;
+  margin-bottom: 64px;
+}
+
+.art_title {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.portrait {
+  grid-row: span 2;
+}
+
+.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.img {
+  display: flex;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+iframe #player {
+  width: 100%;
+  height: 100%;
+}
+
+.txt {
+  position: fixed;
+  top: 80px;
+  text-align: justify;
+  max-height: 85vh;
+  overflow-y: scroll;
+  will-change: transform;
+  z-index: 90;
+  width: 22.5%;
+}
+
+#shop-page section {
+  align-items: center;
+  width: 65%;
+  gap: 64px;
+}
+
+.shop-sections {
+  margin-top: 32px;
+}
+
+.product-container {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#custom {
+  grid-column: 2 / span 10;
+  text-align: center;
+  color: #8d8b8b;
+}
+
+#top-product-section {
+  margin-top: 32px;
+}
+
+.soldout {
+  color: #f2f2f2;
+  background-color: #b2d1fa;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#siteseal {
+  position: fixed;
+  opacity: 80%;
+  bottom: 0px;
+  left: 3px;
+  width: 100px;
+}
+
+a.icon {
+  display: none;
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 1100px) {
+  nav a {
+    font-size: 24px;
+    margin-right: 12 px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  #image-subgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait {
+    grid-row: span 1;
+  }
+
+  .large {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  #about-page {
+    background-size: cover;
+  }
+
+  #bio-text {
+    grid-column: 2 / span 10;
+    margin-bottom: 8px;
+  }
+
+  #contact {
+    grid-column: 5 / span 4;
+    padding: 16px 24px 16px 24px;
+    gap: 24px;
+  }
+
+  footer {
+    left: 78%;
+    width: 25%;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 773px) {
+  #contact {
+    grid-column: 4 / span 6;
+  }
+  #logotype {
+    margin: 12px 0px 0px 0px;
+    position: absolute;
+    right: 16px;
+  }
+  .entry {
+    margin-top: 2%;
+  }
+
+  #myLinks {
+    display: none;
+    transition: opacity 0.25s;
+    gap: 16px;
+    margin: 64px 0px 0px 16px;
+  }
+
+  #nav-bar {
+    transition-property: height;
+    transition-duration: 0.5s;
+  }
+
+  nav a {
+    margin-right: 0px;
+  }
+
+  footer {
+    left: 5%;
+    width: 45%;
+  }
+
+  #selected-page footer p {
+    font-size: 16px;
+  }
+
+  #selected-page #image-subgrid {
+    grid-column: 1 / span 12;
+  }
+
+  #description div {
+    padding: 0px 8px 0px 8px;
+    width: 75%;
+    text-align: justify;
+    margin: 32px 0px 32px 0px;
+    background-color: rgba(139, 139, 139, 0.7);
+    border-radius: 15px;
+  }
+
+  #mobile_intro_txt {
+    top: 16%;
+  }
+
+  .closebtn {
+    background-color: rgba(139, 139, 139, 0.7);
+    border-radius: 15px;
+    position: fixed;
+    top: 10%;
+    z-index: 99;
+    width: 8%;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 40px;
+    padding-right: 0.5%;
+  }
+
+  #description p {
+    color: #f2f2f2;
+  }
+
+  #description {
+    grid-column: 2 / span 10;
+  }
+
+  #selected-page section {
+    margin-top: 40px;
+  }
+
+  a.icon {
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    color: #0d65d8;
+    width: 10%;
+    font-size: 170%;
+    margin: 0px 0px 0px 8px;
+  }
+
+  #siteseal {
+    right: 3px;
+    left: auto;
+  }
+
+  .product-container {
+    grid-column: 2 / span 10;
+  }
+
+  #shop-page section {
+    align-items: center;
+    width: 90%;
+    gap: 32px;
+  }
+}

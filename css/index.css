@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Share+Tech+Mono&display=swap");
+
+@media only screen and (min-width: 500px) {
+  .window:hover {
+    transform: scale(1.15);
+    opacity: 1;
+    /* cursor: pointer; */
+  }
+}
+
+* {
+  cursor: url(../media/GEN/cursor.png), auto;
+}
+
+body *:hover {
+  cursor: url(../media/GEN/cursor.png), auto;
+}
+body:active *:hover {
+  cursor: url(../media/GEN/cursor.png), auto;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  margin: none;
+  overflow: hidden;
+  font-family: "Share Tech Mono", monospace;
+}
+canvas {
+  width: 10%;
+  height: 10%;
+}
+div {
+  margin-left: 2%;
+  margin-right: 2%;
+  position: relative;
+}
+p {
+  color: white;
+  /*	opacity: .01;
+*/
+}
+
+#a {
+  min-width: 6%;
+  min-height: 2.4%;
+  top: 20%;
+  left: 50%;
+}
+
+#b {
+  min-width: 7%;
+  min-height: 2.4%;
+  top: 53%;
+  left: 85%;
+}
+
+#c {
+  min-width: 6%;
+  min-height: 2.4%;
+  top: 83%;
+  left: 60%;
+}
+
+#d {
+  font-size: 130%;
+  min-width: 9%;
+  min-height: 3%;
+  top: 63%;
+  left: 8%;
+}
+
+#p {
+  top: 65%;
+  left: 5%;
+}
+
+#e {
+  top: -3%;
+  left: 5%;
+}
+
+#f {
+  top: -3%;
+  left: 15%;
+}
+
+#g {
+  top: -3%;
+  left: 25%;
+}
+
+#h {
+  top: -3%;
+  left: 35%;
+}
+
+#i {
+  top: -3%;
+  left: 45%;
+}
+
+#j {
+  top: 100%;
+  left: 50%;
+}
+
+#k {
+  top: 100%;
+  left: 60%;
+}
+
+#l {
+  top: 100%;
+  left: 70%;
+}
+
+#m {
+  top: 100%;
+  left: 80%;
+}
+
+#n {
+  top: 100%;
+  left: 90%;
+}
+
+#o {
+  top: 100%;
+  left: 95%;
+}
+
+.window {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10px;
+  opacity: 0.9;
+  padding: 0.5em;
+  position: absolute;
+  z-index: 20;
+  text-align: center;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+  font-family: "Share Tech Mono", monospace;
+  margin: none;
+  font-size: 130%;
+}
+
+#footer {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 3%;
+  top: 97%;
+}
+
+#footer p {
+  margin-top: 3px;
+  font-style: italic;
+  text-align: right;
+  margin-right: 4%;
+}
+
+.connector {
+  width: 1px;
+  height: 1px;
+  /* background-color: white;*/
+  border-radius: 50%;
+}
