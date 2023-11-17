@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>notAcloud</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map, #pano {
+        float: left;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+      #map{
+      	z-index: -1;
+      }
+      #pano{
+      	z-index: -2;
+      }
+      p{
+        font-family: Courier New, Courier, monospace; 
+        position: relative;
+        font-size: 200%;
+        color: #3fef17;
+        margin-left: 43%;
+        margin-top: 24%;
+      }
+      button {
+        font-family: Courier New, Courier, monospace; 
+        background-color: #3fef17;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      img{
+        position: absolute;
+        z-index: 0;
+        left: 0px;
+        top:0px;
+      }
+    </style>
+  </head>
+  <body id="body">
+  <audio id="sound" ><source src="./music.m4a" type="audio/mp4"></source></audio>
+    <div id="map"></div>
+    <div id="pano"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  <script src='https://code.responsivevoice.org/responsivevoice.js'></script>  
+	<script src="./notAcloud.js">
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJLqo5tywogTqUHN0d76G29nuKnkH-eJk&callback=intro">
+    </script>
+    <img src="./icon.png">
+
+    <p id="load">LOADING...</p>
+    <br><button type='button' style='margin-left:45.5%;' onclick='loadScreenEnd()'> button </button>
+
+  </body>
+</html>

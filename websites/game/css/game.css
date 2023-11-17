@@ -1,0 +1,18 @@
+body {
+  overflow-y: hidden;
+}
+
+canvas {
+  width: 60%;
+  margin: 50px auto 100px auto;
+
+  display: block;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  /* border-radius: 35px; */
+}
+
+#sky {
+  background-color: lightblue;
+}
