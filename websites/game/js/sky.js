@@ -72,7 +72,7 @@ function setup() {
   canvasWidth = gridSize * 18; // Make the canvas width a multiple of gridSize
   canvasHeight = gridSize * 10; // Make the canvas height a multiple of gridSize
 
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(canvasWidth, canvasHeight);
 
   playerX = 0;
   playerY = 0;
