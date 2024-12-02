@@ -1,189 +1,362 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="../media/GEN/icon.png" type="image/gif" sizes="16x16">
-		<title>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../media/GEN/icon.png" type="image/gif" sizes="16x16">
+	<title>
 		CLIPPING
-		</title>
-		<style>
-		html, body {
-			height:100%;
-			background:#4f4f4f;
-			margin:1%;
+	</title>
+	<style>
+		html,
+		body {
+			height: 100%;
+			background: #4f4f4f;
+			margin: 1%;
 			overflow: scroll;
 		}
-		p, .left, ul, .sub, td {
+
+		p,
+		.left,
+		ul,
+		.sub,
+		td {
 			list-style: none;
 			color: white;
 			font-family: "Courier New", Courier, monospace;
-    		font-size: 100%;
-    		margin-right: 55%;
-    		text-align: justify;
+			font-size: 100%;
+			margin-right: 55%;
+			text-align: justify;
 		}
-		.right{
+
+		.right {
 			list-style: none;
 			color: white;
 			font-family: "Courier New", Courier, monospace;
-    		font-size: 100%;
-    		margin-left: 55%;
-    		text-align: justify;
+			font-size: 100%;
+			margin-left: 55%;
+			text-align: justify;
 		}
+
 		img {
-/*			float: left;
-*/			width: 100%;
+			/*			float: left;
+*/
+			width: 100%;
 
 		}
+
 		.home {
-		    margin-top:3%;
+			margin-top: 3%;
 			font-size: 90%;
-		    margin-left: 0%;
-		    text-align: left;
+			margin-left: 0%;
+			text-align: left;
 		}
+
 		.sub {
-		    font-size: 95%;
-		    list-style: circle;
+			font-size: 95%;
+			list-style: circle;
 		}
+
 		.subb {
 			font-size: 66%;
 		}
+
 		#title {
 			margin-top: 2%;
 			font-size: 140%;
 		}
+
 		a:link {
-   			color: white;
-   			text-decoration: none;
+			color: white;
+			text-decoration: none;
 		}
+
 		/* visited link */
 		a:visited {
-    		color: white;
+			color: white;
 		}
+
 		/* mouse over link */
 		a:hover {
-    		color: #2bff00;
+			color: #2bff00;
 		}
-		.header{
-			font-size:110%;
+
+		.header {
+			font-size: 110%;
 		}
-		.note{
+
+		.note {
 			color: #2bff00;
 			font-style: italic;
 		}
+
 		@media only screen and (max-width: 500px) {
-            p, .left, .right,.home, ul, .sub, td, img {
-			list-style: none;
-			color: white;
-			font-family: "Courier New", Courier, monospace;
-    		font-size: 100%;
-    		margin-right: 5%;
-    		margin-left: 5%;
-    		width: 90%;
-    		text-align: justify;            }
-        }
-		table{
-			height:30%;
-			width:70%;
+
+			p,
+			.left,
+			.right,
+			.home,
+			ul,
+			.sub,
+			td,
+			img {
+				list-style: none;
+				color: white;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 100%;
+				margin-right: 5%;
+				margin-left: 5%;
+				width: 90%;
+				text-align: justify;
+			}
 		}
-		</style>
-		<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-		<script>
-		$(document).ready(function(){
-			if ($(window).width() < 600 ){
+
+		table {
+			height: 30%;
+			width: 70%;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			if ($(window).width() < 600) {
 				$('p').css({
-					"font-size":"75%"
+					"font-size": "75%"
 				});
 				$('ul').css({
-					"font-size":"75%"
+					"font-size": "75%"
 				});
 				$('.sub').css({
-					"font-size":"75%"
+					"font-size": "75%"
 				});
 				$('td').css({
-					"font-size":"75%"
+					"font-size": "75%"
 				});
 			};
 		});
-		</script>
-	</head>
-	<body>
-		<p class="home"><a href="../../index.html"> home </a> </p>
+	</script>
+</head>
 
-<p>
-<i><span style="font-size:150%;">Lost Information, <br>Projected Transparency</span></i>
-<br><i>brian bartz</i><br><br>
-<img src="../../media/writing/clipping/0.png"><br><br>
-<div class="left">
-<i><span style="font-size:110%; ">I. An Inversion</span></i><br><br>
-In 1997, The Bureau of Inverse Technology, an ongoing art and research collaboration between Natalie Jermijenko and Kate Rich, launched the BITplane. A counter-surveillance project conceived of at the dawn of Silicon Valley&#39;s rise to global prominence, BITplane was a small radio-controlled airplane with an attached camera, which the duo flew over Palo Alto and Mountain View to invert the gaze of surveillance technology back onto the geography of its makers. The campuses of Sun Microsystems, XEROX Parc, Stanford Research Institute, and Lockheed Martin &#8212; all pioneers in the burgeoning military-surveillance-tech-industrial-complex &#8212; were put on view during the stalwart little drone&#39;s maiden voyage, its mission to understand the &#34;threat of the camera to information space.&#34;<a href="#notes"><sup class="note">1</sup></a> <br><br>
-The project demonstrated a peculiar contradiction, as Jerimjenko explains in an interview at the Bard Drone Center.<a href="#notes"><sup class="note">2</sup></a> What motivated the project was that these corporate campuses were all, &#34;no-camera zones,&#34; and forbade UAV operation in their airspace, implying that the military technologies and company secrets housed within these facilities were easily capturable through the lens of a camera. And yet, as the BITplane made clear through it&#39;s scarcely legible black-and-white images, there was very little information to be easily gleaned off the surfaces of the architecture below. As Jerimijenko phrases it, &#34;What could you actually see? What information could you take from the plane? Of course, the answer is not much, as contemporary drones have so aptly demonstrated: lots of images but not much actual trustable information.&#34;<a href="#notes"><sup class="note">3</sup></a><br><br> 
-<span style="margin-left:40%">..............</span><br><br>
-	Twenty years earlier in the mid 1970&#39;s, CIA analysts reexamining images from the second world war faced a similar, if inverted, contradiction. As explored in Harun Farocki&#39;s Images of the World and the Inscription of War<a href="#notes"><sup class="note">4</sup></a>, those analysts discovered that aerial reconnaissance photos of factory construction taken over Krakow had inadvertently captured evidence of the as yet undiscovered Auschwitz concentration camp; in this case the aerial images were laden with actionable information, but because nobody was looking for it at the time, it was as if it was not there. It took thirty years for anybody to notice what had been captured. As narrated in the film: &#34;The Nazis did not notice that someone had photographed their crimes, and the Americans did not notice that they had photographed them. The victims also noticed nothing. Notes as written into a book of God.&#34;<a href="#notes"><sup class="note">5</sup></a> <br><br>
-How might one account for these two cases: action leading to no information, and information leading to no action? Might these two examples illustrate the changing relationship between an image and it&#39;s capacity to store or convey information in an increasingly machinic era? What were these two shots fired off into the abyss?<br><br>
-<img src="../../media/writing/clipping/1.png"><br><br>
-<i style="font-size:80%">top: annotated video still of the Lockheed Martin campus captured by the BITplane. bottom: Film still from Farocki&#39;s Images of the World and the Inscription of War, depicting the aerial photograph of Auschwitz finally reviewed and annotated in 1977.</i><br><br>
-</div>
-<div class="right">
-<i><span style="font-size:110%; ">II. Invisible Polygons Still Exist</span></i><br><br>
-	To complicate things further still, let us turn our attention to an even more contemporary model for such a relationship: computer generated graphics. These kinds of images entail the meticulous modeling of objects in three dimensional space. In essence, this modeling process represents the conversion of information into a 3D form which is potentially legible to human vision. However, that visual legibility is not as much a given in the virtual space of a computer as it is with a camera inscribing light from the world. As Jacob Gaboury argues in the Hidden Surface Problem<a href="#notes"><sup class="note">6</sup></a>, It is necessary to delineate this kind of computationally generated, three dimensional image from prior visual forms (like photography), because to even generate such an image, engineers have had to mathematically construct abstractions such as vanishing-point perspective and the opacity of surfaces. These features are not inherent to the computational image in the same way that they are to the photographic. As such, the imposition of these familiar visual constructs which make an image human-readable were not an inevitability so much as a calculated decision.
+<body>
+	<p class="home"><a href="../../index.html"> home </a> </p>
+
+	<p>
+		<i><span style="font-size:150%;">Lost Information, <br>Projected Transparency</span></i>
+		<br><i>brian bartz</i><br><br>
+		<img src="../../media/writing/clipping/0.png"><br><br>
+	<div class="left">
+		<i><span style="font-size:110%; ">I. An Inversion</span></i><br><br>
+		In 1997, The Bureau of Inverse Technology, an ongoing art and research collaboration between Natalie Jermijenko
+		and Kate Rich, launched the BITplane. A counter-surveillance project conceived of at the dawn of Silicon
+		Valley&#39;s rise to global prominence, BITplane was a small radio-controlled airplane with an attached camera,
+		which the duo flew over Palo Alto and Mountain View to invert the gaze of surveillance technology back onto the
+		geography of its makers. The campuses of Sun Microsystems, XEROX Parc, Stanford Research Institute, and Lockheed
+		Martin &#8212; all pioneers in the burgeoning military-surveillance-tech-industrial-complex &#8212; were put on
+		view during the stalwart little drone&#39;s maiden voyage, its mission to understand the &#34;threat of the
+		camera to information space.&#34;<a href="#notes"><sup class="note">1</sup></a> <br><br>
+		The project demonstrated a peculiar contradiction, as Jerimjenko explains in an interview at the Bard Drone
+		Center.<a href="#notes"><sup class="note">2</sup></a> What motivated the project was that these corporate
+		campuses were all, &#34;no-camera zones,&#34; and forbade UAV operation in their airspace, implying that the
+		military technologies and company secrets housed within these facilities were easily capturable through the lens
+		of a camera. And yet, as the BITplane made clear through it&#39;s scarcely legible black-and-white images, there
+		was very little information to be easily gleaned off the surfaces of the architecture below. As Jerimijenko
+		phrases it, &#34;What could you actually see? What information could you take from the plane? Of course, the
+		answer is not much, as contemporary drones have so aptly demonstrated: lots of images but not much actual
+		trustable information.&#34;<a href="#notes"><sup class="note">3</sup></a><br><br>
+		<span style="margin-left:40%">..............</span><br><br>
+		Twenty years earlier in the mid 1970&#39;s, CIA analysts reexamining images from the second world war faced a
+		similar, if inverted, contradiction. As explored in Harun Farocki&#39;s Images of the World and the Inscription
+		of War<a href="#notes"><sup class="note">4</sup></a>, those analysts discovered that aerial reconnaissance
+		photos of factory construction taken over Krakow had inadvertently captured evidence of the as yet undiscovered
+		Auschwitz concentration camp; in this case the aerial images were laden with actionable information, but because
+		nobody was looking for it at the time, it was as if it was not there. It took thirty years for anybody to notice
+		what had been captured. As narrated in the film: &#34;The Nazis did not notice that someone had photographed
+		their crimes, and the Americans did not notice that they had photographed them. The victims also noticed
+		nothing. Notes as written into a book of God.&#34;<a href="#notes"><sup class="note">5</sup></a> <br><br>
+		How might one account for these two cases: action leading to no information, and information leading to no
+		action? Might these two examples illustrate the changing relationship between an image and it&#39;s capacity to
+		store or convey information in an increasingly machinic era? What were these two shots fired off into the
+		abyss?<br><br>
+		<img src="../../media/writing/clipping/1.png"><br><br>
+		<i style="font-size:80%">top: annotated video still of the Lockheed Martin campus captured by the BITplane.
+			bottom: Film still from Farocki&#39;s Images of the World and the Inscription of War, depicting the aerial
+			photograph of Auschwitz finally reviewed and annotated in 1977.</i><br><br>
+	</div>
+	<div class="right">
+		<i><span style="font-size:110%; ">II. Invisible Polygons Still Exist</span></i><br><br>
+		To complicate things further still, let us turn our attention to an even more contemporary model for such a
+		relationship: computer generated graphics. These kinds of images entail the meticulous modeling of objects in
+		three dimensional space. In essence, this modeling process represents the conversion of information into a 3D
+		form which is potentially legible to human vision. However, that visual legibility is not as much a given in the
+		virtual space of a computer as it is with a camera inscribing light from the world. As Jacob Gaboury argues in
+		the Hidden Surface Problem<a href="#notes"><sup class="note">6</sup></a>, It is necessary to delineate this kind
+		of computationally generated, three dimensional image from prior visual forms (like photography), because to
+		even generate such an image, engineers have had to mathematically construct abstractions such as vanishing-point
+		perspective and the opacity of surfaces. These features are not inherent to the computational image in the same
+		way that they are to the photographic. As such, the imposition of these familiar visual constructs which make an
+		image human-readable were not an inevitability so much as a calculated decision.
+		<br><br>
+		Gaboury spends particular time engaging the development of so-called &#34;hidden surface&#34; algorithms
+		throughout the 80s, which proved immensely difficult for the field to produce. Largely concentrated in the
+		University of Utah, these pioneering engineers, many of whom would go on to work for the same companies
+		surveilled by the BITplane, struggled immensely with the question of how to algorithmically determine whether
+		one vertex appeared behind another in a computer generated image. While it was relatively trivial to model three
+		dimensional objects in virtual space as well as render them through a mathematically constructed perspective
+		akin to that of a camera, what proved incredibly difficult was determining if, from that constructed
+		perspective, a given surface of an object would appear behind another, and would thus necessitate obfuscation in
+		the output image.<a href="#notes"><sup class="note">7</sup></a>
+		<br><br>
+		<img src="../../media/writing/clipping/2.png"><br>
+		<i style="font-size:80%">An illustration of a hidden surface algorithm at work. On top, a wireframe rendering of
+			intersecting 3D forms is less legible to the human eye, but technically conveys the most information. On the
+			bottom, after the algorithm and shading are applied, the form is more legible to the human eye, but obscures
+			much of the original information necessary to produce the forms which populate the image.</i>
+		<br><br>
+		Therein lies what, on the surface, seems to be a contradiction in the generation of computer graphics; in order
+		for a machine to generate an image that is legible to human vision, it necessarily entails the removal of at
+		least some of the original information which was used to describe its forms in the first place. In the same way
+		that the BITplane could not see beneath the roofs of those tech campuses which it counter-surveilled, nor into
+		the computer hard disks which actually held most of their proprietary secrets, so too does a computational image
+		hide more information than it reveals. The difference being that this newer type of image was artificially
+		generated from a complete body of information rather than constrained by the physical capacity for light to
+		penetrate opaque surfaces. To my mind, this amounts to an ideological choice on the part of the engineers, one
+		in which a computer is endowed with all the information, deciding algorithmically what to disclose. This kind of
+		selective obfuscation and tight control over the accessibility of information is a pervasive organizing
+		principle underlying many contemporary technologies.<a href="#notes"><sup class="note">8</sup></a>
+	</div><br><br>
+
+	<p>
+	<div class="left">
+		<i><span style="font-size:110%; ">III. Projecting Transparency</span></i><br><br>
+		Perhaps it was that those companies did not fully understand the new visual paradigm they had already set in
+		motion when they decided to prohibit the use of cameras on or around their campuses. Perhaps they had not
+		realized that, through the work of their own engineers, the world had moved on from the model described in
+		Farocki&#39;s film, one in which someone seeking information from an image might well find it if they knew what
+		they were looking for and were paying sufficient attention. Or perhaps it was a paranoid understanding that new
+		paradigms usually arise before the death of the old, that a camera could still catch them off guard. Continued
+		caution regarding cameras was still warranted, as evidenced in Andrew Norman Wilson&#39;s film Workers Leaving
+		the Googleplex<a href="#notes"><sup class="note">9</sup></a>, in which the artist videotaped a group of
+		minimum-wage laborers working on a book scanning project of questionable legality quickly shuffling into their
+		cars after their shifts ended. He was promptly fired and threatened with litigation for recording it.<a
+			href="#notes"><sup class="note">10</sup></a>
+		<br><br>
+		But despite the continuing (albeit shrinking) possibility of camera-based security breaches, these companies
+		eventually came around, in a way; in the decades since BITplane was launched, the rise of mainstream privacy
+		debates and the general opacity of Big Tech has forced many such companies to outwardly project an illusion of
+		absolute transparency, despite their immense repositories of state and corporate secrets. As Key MacFarlane
+		notes in The Greenhouse Effect<a href="#notes"><sup class="note">11</sup></a>, tech campuses have increasingly
+		made a turn towards &#34;green architecture,&#34; which, incidentally, entails their construction out of glass
+		and transparent materials. And according to MacFarlane, this type of transparency has as much to do with
+		generating trustworthiness as, &#34;making brutal stratifications of class, race and gender appear transparently
+		natural.&#34;<a href="#notes"><sup class="note">12</sup></a>
+		<br><br>
+		Sometimes this outwardly projected transparency looks like Google taking journalists on tours through data
+		centers, Apple building high-ceilinged stores that you can see right through from the outside, or the trend of
+		new tech HQs being constructed entirely from ergonomically curved, eco-friendly glass panels, likely produced
+		using heavily exploited labor and highly extractive supply chains. Regardless of how this pseudo-transparency is
+		manufactured and projected, all we have left to look at is a 3D video of a Google server rack in all its opaque
+		glory.
+		<br><br>They realized, somewhere along the way, that most of their data did not need to be visually accessible,
+		that their best kept proprietary secrets are not going to be ones that a person with a camera could walk away
+		with, but would exist instead as bits and bytes. And as hidden surface algorithms illustrate, once information
+		is encoded computationally, its translation into a visually legible form tends to be tightly controlled and thus
+		inflected with the biases and intentions of those who control the bits and bytes. As such, the accessibility and
+		trustworthiness of information in an image &#8212;which was never really a given&#8212; is especially not a
+		given now.<br><br>
+		<img src="../../media/writing/clipping/3.png"><br><br>
+		<i style="font-size:80%">top: Amazon&#39;s Sphere campus in Seattle. bottom: Visitor center for Apple&#39;s new
+			ring shaped campus: Apple Park. Transparency has become an underlying architectural principle for new tech
+			campuses.</i>
+	</div>
+	</p>
 	<br><br>
-	Gaboury spends particular time engaging the development of so-called &#34;hidden surface&#34; algorithms throughout the 80s, which proved immensely difficult for the field to produce. Largely concentrated in the University of Utah, these pioneering engineers, many of whom would go on to work for the same companies surveilled by the BITplane, struggled immensely with the question of how to algorithmically determine whether one vertex appeared behind another in a computer generated image. While it was relatively trivial to model three dimensional objects in virtual space as well as render them through a mathematically constructed perspective akin to that of a camera, what proved incredibly difficult was determining if, from that constructed perspective, a given surface of an object would appear behind another, and would thus necessitate obfuscation in the output image.<a href="#notes"><sup class="note">7</sup></a>
-<br><br>
-<img src="../../media/writing/clipping/2.png"><br>
-<i style="font-size:80%">An illustration of a hidden surface algorithm at work. On top, a wireframe rendering of intersecting 3D forms is less legible to the human eye, but technically conveys the most information. On the bottom, after the algorithm and shading are applied, the form is more legible to the human eye, but obscures much of the original information necessary to produce the forms which populate the image.</i>
-<br><br>
-Therein lies what, on the surface, seems to be a contradiction in the generation of computer graphics; in order for a machine to generate an image that is legible to human vision, it necessarily entails the removal of at least some of the original information which was used to describe its forms in the first place. In the same way that the BITplane could not see beneath the roofs of those tech campuses which it counter-surveilled, nor into the computer hard disks which actually held most of their proprietary secrets, so too does a computational image hide more information than it reveals. The difference being that this newer type of image was artificially generated from a complete body of information rather than constrained by the physical capacity for light to penetrate opaque surfaces. To my mind, this amounts to an ideological choice on the part of the engineers, one in which a computer is endowed with all the information, deciding algorithmically what to disclose. This kind of selective obfuscation and tight control over the accessibility of information is a pervasive organizing principle underlying many contemporary technologies.<a href="#notes"><sup class="note">8</sup></a>
-</div><br><br>
 
-<p>
-<div class="left">
-<i><span style="font-size:110%; ">III. Projecting Transparency</span></i><br><br>
-Perhaps it was that those companies did not fully understand the new visual paradigm they had already set in motion when they decided to prohibit the use of cameras on or around their campuses. Perhaps they had not realized that, through the work of their own engineers, the world had moved on from the model described in Farocki&#39;s film, one in which someone seeking information from an image might well find it if they knew what they were looking for and were paying sufficient attention. Or perhaps it was a paranoid understanding that new paradigms usually arise before the death of the old, that a camera could still catch them off guard. Continued caution regarding cameras was still warranted, as evidenced in Andrew Norman Wilson&#39;s film Workers Leaving the Googleplex<a href="#notes"><sup class="note">9</sup></a>, in which the artist videotaped a group of minimum-wage laborers working on a book scanning project of questionable legality quickly shuffling into their cars after their shifts ended. He was promptly fired and threatened with litigation for recording it.<a href="#notes"><sup class="note">10</sup></a>
-<br><br>
-But despite the continuing (albeit shrinking) possibility of camera-based security breaches, these companies eventually came around, in a way; in the decades since BITplane was launched, the rise of mainstream privacy debates and the general opacity of Big Tech has forced many such companies to outwardly project an illusion of absolute transparency, despite their immense repositories of state and corporate secrets. As Key MacFarlane notes in The Greenhouse Effect<a href="#notes"><sup class="note">11</sup></a>, tech campuses have increasingly made a turn towards &#34;green architecture,&#34; which, incidentally, entails their construction out of glass and transparent materials. And according to MacFarlane, this type of transparency has as much to do with generating trustworthiness as, &#34;making brutal stratifications of class, race and gender appear transparently natural.&#34;<a href="#notes"><sup class="note">12</sup></a>
-<br><br> 
-Sometimes this outwardly projected transparency looks like Google taking journalists on tours through data centers, Apple building high-ceilinged stores that you can see right through from the outside, or the trend of new tech HQs being constructed entirely from ergonomically curved, eco-friendly glass panels, likely produced using heavily exploited labor and highly extractive supply chains. Regardless of how this pseudo-transparency is manufactured and projected, all we have left to look at is a 3D video of a Google server rack in all its opaque glory. 
-<br><br>They realized, somewhere along the way, that most of their data did not need to be visually accessible, that their best kept proprietary secrets are not going to be ones that a person with a camera could walk away with, but would exist instead as bits and bytes. And as hidden surface algorithms illustrate, once information is encoded computationally, its translation into a visually legible form tends to be tightly controlled and thus inflected with the biases and intentions of those who control the bits and bytes. As such, the accessibility and trustworthiness of information in an image &#8212;which was never really a given&#8212; is especially not a given now.<br><br>
-<img src="../../media/writing/clipping/3.png"><br><br>
-<i style="font-size:80%">top: Amazon&#39;s Sphere campus in Seattle. bottom: Visitor center for Apple&#39;s new ring shaped campus: Apple Park. Transparency has become an underlying architectural principle for new tech campuses.</i>
-</div>
-</p>
-<br><br>
+	<div class="right">
+		<i><span style="font-size:110%;">IV. Operational Images, Uncanny Images</span></i><br><br>
+		Near the end of his life, Harun Farocki became preoccupied with what he called &#34;operational images,&#34; a
+		term he coined to describe the increasing volume of images which are created by machines and are only legible to
+		machines<a href="#notes"><sup class="note">13</sup></a>. They are the visual detritus of our age: computer
+		vision algorithms passing scores of abstractly-patterned jpegs between one another to better understand their
+		inputs, QR codes littering the virtual and physical world, microsecond graphs produced by high frequency stock
+		trading bots, a body detection algorithm running on a predator drone deciding whether or not to launch a
+		missile, ultimately based on its interpretation of small pixel-clusters; the list goes on. Humans are not
+		necessarily part of the semantic chain any longer; an image is often the output of one machine and the input to
+		another, even when the consequences are all-too-human in terms of their resultant violence.<br><br>
+		But on the other end of this spectrum, we find ourselves climbing out of the deepest depths of the uncanny
+		valley, wherein the computationally generated images we do create for human consumption are nearing a complete
+		mimesis. We appear to be asymptotically approaching the ability to generate images which are hyper-compatible
+		with our understanding of reality, to an extent that was perhaps unthinkable to those early engineers at the
+		University of Utah. Once we cannot distinguish a render from a photograph, the informatic distinctions between
+		the two become flattened.<br><br>
+		<img src="../../media/writing/clipping/4.png"><br>
 
-<div class="right">
-<i><span style="font-size:110%;">IV. Operational Images, Uncanny Images</span></i><br><br>
-	Near the end of his life, Harun Farocki became preoccupied with what he called &#34;operational images,&#34; a term he coined to describe the increasing volume of images which are created by machines and are only legible to machines<a href="#notes"><sup class="note">13</sup></a>. They are the visual detritus of our age: computer vision algorithms passing scores of abstractly-patterned jpegs between one another to better understand their inputs, QR codes littering the virtual and physical world, microsecond graphs produced by high frequency stock trading bots, a body detection algorithm running on a predator drone deciding whether or not to launch a missile, ultimately based on its interpretation of  small pixel-clusters; the list goes on. Humans are not necessarily part of the semantic chain any longer; an image is often the output of one machine and the input to another, even when the consequences are all-too-human in terms of their resultant violence.<br><br>
-But on the other end of this spectrum, we find ourselves climbing out of the deepest depths of the uncanny valley, wherein the computationally generated images we do create for human consumption are nearing a complete mimesis. We appear to be asymptotically approaching the ability to generate images which are hyper-compatible with our understanding of reality, to an extent that was perhaps unthinkable to those early engineers at the University of Utah. Once we cannot distinguish a render from a photograph, the informatic distinctions between the two become flattened.<br><br>
-<img src="../../media/writing/clipping/4.png"><br>
+		<i style="font-size:80%">A computer generated image from the Ikea Catalog. They are rendered using a
+			contemporary light-simulation technique called &#39;ray tracing.&#39; Around 75% of images in the Ikea
+			Catalog are now made using 3D modeling software, as it is logistically much easier than
+			photography.</i><br><br>
 
-<i style="font-size:80%">A computer generated image from the Ikea Catalog. They are rendered using a contemporary light-simulation technique called &#39;ray tracing.&#39; Around 75% of images in the Ikea Catalog are now made using 3D modeling software, as it is logistically much easier than photography.</i><br><br>
+		The types of images being produced computationally are thus stratifying further with each day, either cutting
+		humans out entirely, or supplying us with images almost indistinguishable from those produced by cameras, still
+		our deeply flawed metric for realism and truth. In this ever-growing gulf, what have we lost? What have we
+		found? And what will get buried? What is clear is that, at either end of this operational to uncanny spectrum,
+		our capacity to consume and interpret visual information becomes deeply problematized.<br><br>
+		This is, at the end of the day, a story about an asymmetry of information, which, without coincidence, comes
+		into being concurrently with the rise of data as capital. Such a paradigm is entirely contingent on accumulating
+		and centralizing as much information as possible and deciding very carefully what its subjects can and cannot
+		see of its superstructure. It&#39;s a large scale compartmentalizing of data into abstract and horizontally
+		positioned clusters that one can only interface with using proprietary protocols. The design makes it impossible
+		to get a bird&#39;s eye view on it all, too complex for any individual to fully comprehend. <br><br>
+		Maybe we are all a little like the BITplane now, roving about the world while processing countless empty images,
+		attempting with futility to gain that vertical perspective which might lend us clarity. And even in those images
+		which aren&#39;t so empty, which do tell us something meaningful, can we even trust that they are disclosing to
+		us anything but a partial truth? A carefully curated reality? Once the images are rendered and distributed,
+		their hidden surfaces are as opaque to us as what lies beneath the roof of the Lockheed Martin headquarters; 3D
+		rendering is as much a mode for generating images as it is a lossy compression format that necessarily sheds
+		information. Can we use computer graphics as a way to highlight the fault-lines, exaggerate the contradictions
+		of our new visual schema? Maybe at least artists can recuperate computer graphics away from the overly-smooth,
+		frictionless computer renderings increasingly saturating our world, folding such tools back onto themselves to
+		reveal something about their constitutive parts, their component ideologies.
+	</div>
 
-The types of images being produced computationally are thus stratifying further with each day, either cutting humans out entirely, or supplying us with images almost indistinguishable from those produced by cameras, still our deeply flawed metric for realism and truth. In this ever-growing gulf, what have we lost? What have we found? And what will get buried? What is clear is that, at either end of this operational to uncanny spectrum, our capacity to consume and interpret visual information becomes deeply problematized.<br><br>
-This is, at the end of the day, a story about an asymmetry of information, which, without coincidence, comes into being concurrently with the rise of data as capital. Such a paradigm is entirely contingent on accumulating and centralizing as much information as possible and deciding very carefully what its subjects can and cannot see of its superstructure. It&#39;s a large scale compartmentalizing of data into abstract and horizontally positioned clusters that one can only interface with using proprietary protocols. The design makes it impossible to get a bird&#39;s eye view on it all, too complex for any individual to fully comprehend. <br><br>
-Maybe we are all a little like the BITplane now, roving about the world while processing countless empty images, attempting with futility to gain that vertical perspective which might lend us clarity. And even in those images which aren&#39;t so empty, which do tell us something meaningful, can we even trust that they are disclosing to us anything but a partial truth? A carefully curated reality? Once the images are rendered and distributed, their hidden surfaces are as opaque to us as what lies beneath the roof of the Lockheed Martin headquarters; 3D rendering is as much a mode for generating images as it is a lossy compression format that necessarily sheds information. Can we use computer graphics as a way to highlight the fault-lines, exaggerate the contradictions of our new visual schema? Maybe at least artists can recuperate computer graphics away from the overly-smooth, frictionless computer renderings increasingly saturating our world, folding such tools back onto themselves to reveal something about their constitutive parts, their component ideologies.
-</div>
+	<p>
+		<br><br>___________________________________________
 
-<p>
-<br><br>___________________________________________
+		<br><br>
+		<i><span style="font-size:120%;" id="notes">Notes:</span></i><br><br>
 
-<br><br>
-<i><span style="font-size:120%;" id="notes">Notes:</span></i><br><br>
+		<span class="note">1. <a href=" http://bureauit.org/decade/projects.html">Bureau of Inverse
+				Technology</a></span> <br>
+		<span class="note">2. <a href="  https://dronecenter.bard.edu/interview-natalie-jeremijenko/">Interview at the
+				Drone Bard Center</a></span> <br>
+		<span class="note">3. <a href="  https://dronecenter.bard.edu/interview-natalie-jeremijenko/">ibid.</a></span>
+		<br>
+		<span class="note">4. <a
+				href=" https://www.vdb.org/collection/browser-artist-list/images-world-and-inscription-war">Harun
+				Farocki&#39;s Images of the World and the Inscription of War</a></span> <br>
+		<span class="note">5. <a
+				href=" https://www.vdb.org/collection/browser-artist-list/images-world-and-inscription-war">ibid.</a></span>
+		<br>
+		<span class="note">6. <a href=" https://journals.sagepub.com/doi/full/10.1177/1470412914562270">Hidden Surface
+				Problems by Jacob Gaboury</a></span> <br>
+		<span class="note">7. <a href=" https://journals.sagepub.com/doi/full/10.1177/1470412914562270">ibid.</a></span>
+		<br>
+		<span class="note">8. <a href="">See: Abstraction in the computer engineering sense. &#34;The essence of
+				abstraction is preserving information that is relevant in a given context, and forgetting information
+				that is irrelevant in that context.&#34; - John V. Guttag</a></span> <br>
+		<span class="note">9. <a href="http://www.andrewnormanwilson.com/WorkersGoogleplex.html">Andrew Norman
+				Wilson&#39;s Workers Leaving the Googleplex</a></span> <br>
+		<span class="note">10. <a
+				href="https://www.google.com/url?q=https://www.e-flux.com/journal/74/59791/the-artist-leaving-the-googleplex/&sa=D&source=editors&ust=1630316247541000&usg=AOvVaw3_HqKMTrO_BC52VFqhwVEo">Interview
+				with Andrew Norman Wilson</a></span> <br>
+		<span class="note">11. <a href="https://www.metamute.org/editorial/articles/greenhouse-effect">The Greenhouse
+				Effect by Key MacFarlane</a></span> <br>
+		<span class="note">12. <a href="https://www.metamute.org/editorial/articles/greenhouse-effect">ibid.</a></span>
+		<br>
+		<span class="note">13. <a href="https://www.e-flux.com/journal/59/61130/operational-images/">Operational Images
+				by Trevor Paglen</a></span> <br>
+		<br><br>
+	</p>
+	</p>
+</body>
 
-<span class="note">1. <a href=" http://bureauit.org/decade/projects.html">Bureau of Inverse Technology</a></span>  <br>
-<span class="note">2. <a href="  https://dronecenter.bard.edu/interview-natalie-jeremijenko/">Interview at the Drone Bard Center</a></span>  <br>
-<span class="note">3. <a href="  https://dronecenter.bard.edu/interview-natalie-jeremijenko/">ibid.</a></span>  <br>
-<span class="note">4. <a href=" https://www.vdb.org/collection/browser-artist-list/images-world-and-inscription-war">Harun Farocki&#39;s Images of the World and the Inscription of War</a></span>  <br>
-<span class="note">5. <a href=" https://www.vdb.org/collection/browser-artist-list/images-world-and-inscription-war">ibid.</a></span>  <br>
-<span class="note">6. <a href=" https://journals.sagepub.com/doi/full/10.1177/1470412914562270">Hidden Surface Problems by Jacob Gaboury</a></span>  <br>
-<span class="note">7. <a href=" https://journals.sagepub.com/doi/full/10.1177/1470412914562270">ibid.</a></span>  <br>
-<span class="note">8. <a href="">See: Abstraction in the computer engineering sense. &#34;The essence of abstraction is preserving information that is relevant in a given context, and forgetting information that is irrelevant in that context.&#34; - John V. Guttag</a></span>  <br>
-<span class="note">9. <a href="http://www.andrewnormanwilson.com/WorkersGoogleplex.html">Andrew Norman Wilson&#39;s Workers Leaving the Googleplex</a></span>  <br>
-<span class="note">10. <a href="https://www.google.com/url?q=https://www.e-flux.com/journal/74/59791/the-artist-leaving-the-googleplex/&sa=D&source=editors&ust=1630316247541000&usg=AOvVaw3_HqKMTrO_BC52VFqhwVEo">Interview with Andrew Norman Wilson</a></span>  <br>
-<span class="note">11. <a href="https://www.metamute.org/editorial/articles/greenhouse-effect">The Greenhouse Effect by Key MacFarlane</a></span>  <br>
-<span class="note">12. <a href="https://www.metamute.org/editorial/articles/greenhouse-effect">ibid.</a></span>  <br>
-<span class="note">13. <a href="https://www.e-flux.com/journal/59/61130/operational-images/">Operational Images by Trevor Paglen</a></span>  <br>
-<br><br>
-</p>
-</p>
-	</body>
 </html>
