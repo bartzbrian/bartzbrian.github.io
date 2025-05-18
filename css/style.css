@@ -537,9 +537,12 @@ a.icon {
 
 @media (min-width: 1600px) {
   .txt {
-    left: 0;
-    width: calc((100vw - 1400px) / 2 - 32px); /* leave a 32px gutter */
-    max-width: 280px; /* Optional cap so it doesn’t get too wide on ultrawide monitors */
+    position: fixed;
+    left: calc((100vw - 4200px) / 2 - 320px); /* aligns right edge with left edge of 1200px grid */
+    width: 280px; /* your desired fixed width */
+    max-width: 100%; /* prevent overflow on narrow cases */
+    box-sizing: border-box;
+    padding: 16px;
   }
 
   #selected-page section {
