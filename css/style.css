@@ -385,7 +385,7 @@ a.icon {
   display: none;
 }
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 1100px) {
+@media (max-width: 1283px) {
   nav a {
     font-size: 24px;
     margin-right: 12 px;
