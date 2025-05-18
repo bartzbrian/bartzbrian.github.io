@@ -536,12 +536,15 @@ a.icon {
 }
 
 @media (min-width: 1600px) {
+  .txt {
+    left: 0;
+    width: calc((100vw - 1400px) / 2 - 32px); /* leave a 32px gutter */
+    max-width: 280px; /* Optional cap so it doesn’t get too wide on ultrawide monitors */
+  }
+
   #selected-page section {
     max-width: 1400px;
-    margin-left: calc(22.5% + 48px); /* Adjust 48px for spacing */
-    margin-right: auto;
-  }
-  .txt {
-    left: calc((100vw - 1400px) / 2); /* Align with left edge of grid */
+    margin: 96px auto 0 auto;
   }
 }
+
