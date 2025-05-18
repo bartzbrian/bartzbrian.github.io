@@ -538,7 +538,7 @@ a.icon {
 @media (min-width: 1600px) {
   .txt {
     position: fixed;
-    left: calc((100vw - 4200px) / 2 - 320px); /* aligns right edge with left edge of 1200px grid */
+    /* left: calc((100vw - 4200px) / 2 - 320px); aligns right edge with left edge of 1200px grid */
     width: 280px; /* your desired fixed width */
     max-width: 100%; /* prevent overflow on narrow cases */
     box-sizing: border-box;
