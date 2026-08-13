@@ -278,6 +278,10 @@ footer {
   grid-row: span 2;
 }
 
+#diavid {
+    grid-row: span 1;
+}
+
 .img {
   display: flex;
 }
